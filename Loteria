@@ -1,0 +1,28 @@
+import random
+import time
+
+loteria = []
+eleccion = []
+
+while len(eleccion) < 6:
+    num = int(input(f"Ingresa numero ganador: "))
+    if num not in eleccion:
+        eleccion.append(num)
+
+while len(loteria) < 6:
+    a = random.randint(1,48)
+    
+    if a not in loteria:
+        loteria.append(a)
+        print("-"*10)
+        print("Revelacion!")
+        time.sleep(1)
+        print(loteria)
+
+loteria = sorted(loteria)
+eleccion= sorted(eleccion)
+
+if eleccion == loteria:
+    print("FELICIDADES! Ganaste la loteria.")
+else:
+    print("Sigue intentando!")
