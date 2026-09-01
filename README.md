@@ -1,4 +1,4 @@
-#  Mini Lotería - Casi imposible de ganar
+#  Mini Lotería
 
 Simulador de lotería en Python donde ingresas 6 números
 y rezas para que coincidan con los 6 aleatorios del programa.
